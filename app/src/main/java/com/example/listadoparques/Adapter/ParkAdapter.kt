@@ -2,9 +2,9 @@ package com.example.listadoparques.Adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.listadoparques.ListaParques
-import com.example.listadoparques.ListaParques.Companion.listaDeParques
+import android.view.LayoutInflater
 import com.example.listadoparques.Parques
+import com.example.listadoparques.R
 
 class ParkAdapter(val listaDeParques: List<Parques>): RecyclerView.Adapter<ParkViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ParkViewHolder {
