@@ -8,7 +8,8 @@ import com.example.listadoparques.R
 
 class ParkAdapter(val listaDeParques: List<Parques>): RecyclerView.Adapter<ParkViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ParkViewHolder {
-        TODO("Not yet implemented")
+        val layoutInflater = LayoutInflater.from(parent.context)
+        return ParkViewHolder(layoutInflater.inflate(R.layout.item_parque, parent, false))
     }
 
     override fun getItemCount(): Int {
