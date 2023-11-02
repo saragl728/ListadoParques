@@ -1,5 +1,8 @@
 package com.example.listadoparques.Adapter
-import com.example.listadoparques.Parques
 
-class ParkViewHolder {
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+
+class ParkViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+
 }
