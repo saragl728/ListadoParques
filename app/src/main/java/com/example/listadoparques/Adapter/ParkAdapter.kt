@@ -2,6 +2,7 @@ package com.example.listadoparques.Adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.listadoparques.ListaParques
 import com.example.listadoparques.ListaParques.Companion.listaDeParques
 import com.example.listadoparques.Parques
 
@@ -15,6 +16,7 @@ class ParkAdapter(val listaDeParques: List<Parques>): RecyclerView.Adapter<ParkV
     }
 
     override fun onBindViewHolder(holder: ParkViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val item = listaDeParques[position]
+        holder.render(item)
     }
 }
