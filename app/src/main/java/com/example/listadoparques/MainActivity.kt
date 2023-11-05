@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.recycler.layoutManager = LinearLayoutManager(this)
-        binding.recycler.Adapter = ParkAdapter(ListaParques.listaDeParques)
+        binding.recycler.adapter = ParkAdapter(ListaParques.listaDeParques)
 
     }
 }
