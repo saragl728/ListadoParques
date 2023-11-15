@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/imagenParque"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/appimground"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Nombre"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imagenParque"
+            />
+        <EditText
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Descripción"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nombre"
+            />
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Teléfono"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descripcion"
+            />
+
+        <EditText
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="web"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/telefono"
+            />
+
+        <TextView
+            android:id="@+id/l_apertura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora de apertura"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/web" />
+        <TextView
+            android:id="@+id/l_cierre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora de cierre"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/web"/>
+
+        <Spinner
+            android:id="@+id/h_apertura"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:entries="@array/horas"
+            android:spinnerMode="dialog"
+            android:contentDescription="Hora de apertura"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/l_apertura"
+            />
+
+        <Spinner
+            android:id="@+id/h_cierre"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:entries="@array/horas"
+            android:spinnerMode="dialog"
+            android:contentDescription="Hora de cierre"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/l_cierre"
+            />
+
+        <TextView
+            android:id="@+id/l_actividades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actividades"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/h_apertura"/>
+
+        <CheckBox
+            android:id="@+id/cbDeportes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Deportes"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/l_actividades"/>
+
+        <CheckBox
+            android:id="@+id/cbParqueInf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Parque Infantil"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbDeportes"/>
+
+        <CheckBox
+            android:id="@+id/cbRestaurante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Restaurante"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbParqueInf"/>
+
+        <CheckBox
+            android:id="@+id/cbMascotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Deportes"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbRestaurante"/>
+
+        <Button
+            android:id="@+id/bGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbMascotas"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
