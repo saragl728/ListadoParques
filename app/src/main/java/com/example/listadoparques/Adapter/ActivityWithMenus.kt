@@ -9,7 +9,7 @@ import com.example.listadoparques.AnadirParqueActivity
 import com.example.listadoparques.MainActivity
 import com.example.listadoparques.R
 
-class ActivityWithMenus : AppCompatActivity() {
+open class ActivityWithMenus : AppCompatActivity() {
     companion object{
         var actividadActual = 0;
     }

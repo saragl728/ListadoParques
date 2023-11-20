@@ -2,10 +2,10 @@ package com.example.listadoparques
 
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
+import com.example.listadoparques.Adapter.ActivityWithMenus
 import com.example.listadoparques.databinding.ActivityAnadirParqueBinding
 
-class AnadirParqueActivity : AppCompatActivity() {
+class AnadirParqueActivity : ActivityWithMenus() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)

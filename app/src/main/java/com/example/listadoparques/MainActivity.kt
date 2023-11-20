@@ -1,13 +1,13 @@
 package com.example.listadoparques
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.listadoparques.Adapter.ActivityWithMenus
 import com.example.listadoparques.Adapter.ParkAdapter
 import com.example.listadoparques.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ActivityWithMenus() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
