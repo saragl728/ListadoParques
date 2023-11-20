@@ -9,6 +9,8 @@ import com.example.listadoparques.databinding.ActivityMainBinding
 
 class MainActivity : ActivityWithMenus() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        //para que salga el título de la actividad
+        setTitle("Listadoparques")
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         var adapter = ParkAdapter(ListaParques.listaDeParques)

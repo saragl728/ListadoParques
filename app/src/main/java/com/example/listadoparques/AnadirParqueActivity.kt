@@ -7,6 +7,8 @@ import com.example.listadoparques.databinding.ActivityAnadirParqueBinding
 
 class AnadirParqueActivity : ActivityWithMenus() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        //para que salga el título de la actividad
+        setTitle("Adición de parques")
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         var binding = ActivityAnadirParqueBinding.inflate(layoutInflater)

@@ -28,7 +28,7 @@ open class ActivityWithMenus : AppCompatActivity() {
             R.id.inicio -> {
                 //abre el listado de parques
                 val intent = Intent(this, MainActivity::class.java)
-                intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 actividadActual = 0;
                 startActivity(intent)
                 true
