@@ -15,10 +15,15 @@ open class ActivityWithMenus : AppCompatActivity() {
     }
 
     //sobreescribimos métodos
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         //relacionamos la clase con el layout del menú que hennos creado
         val inflater : MenuInflater = menuInflater
         inflater.inflate(R.menu.menu_principal, menu)
+        //desactivar la opción de la actividad en la que estamos
+        for (i in 0 until  menu.size()){
+            if (i == actividadActual) menu.getItem(i).isEnabled = false
+            else menu.getItem(i).isEnabled = true
+        }
         return true;
     }
 
