@@ -8,4 +8,10 @@
     <item
         android:id="@+id/anadirParque"
         android:title="Anadir parque" />
+    <item
+        android:id="@+id/compartir"
+        android:title="Compartir"
+        android:icon="@drawable/compartir"
+        app:showAsAction="always"/>
+
 </menu>
